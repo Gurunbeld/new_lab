@@ -7,7 +7,7 @@ type ListElement = {
 const ToDoList = () => {
     const[name, setName] = useState("");
     const[description, setDescription] = useState("");
-    const[list, setList] = useState<ListElement>([]);
+    const[list, setList] = useState<ListElement[]>([]);
 
     const addElement = () => {
         setList([{
